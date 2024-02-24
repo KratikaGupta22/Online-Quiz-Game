@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="welcome">
+            <h1>Online Quiz</h1>
+            <img src="./Img/brain.png" alt="">
+            <button onclick="start()">Start</button>
+            <button>Close</button>
+        </div>
+
+        <div id="quescontainer">
+            <div id="scoretime">
+                <p>Score : <span id="point">0</span></p>
+                <h1>Online Quiz</h1>
+                <p>Time left : 30</p>
+            </div>
+            <div id="quesholder">
+                <div id="ques1" class="ques">
+                    <div id="question">
+                        <p>What is the capital city of France?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="submit() ,change1()">Paris</button>
+                        <button onclick="change1()">Madrid</button>
+                        <button onclick="change1()">Berlin</button>
+                        <button onclick="change1()">Rome</button>
+                    </div>
+                </div>
+
+                <div id="ques2" class="ques">
+                    <div id="question">
+                        <p>What is the capital city of Japan?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change2()">Beijing</button>
+                        <button onclick="submit(),change2()">Tokyo</button>
+                        <button onclick="change2()">Seoul</button>
+                        <button onclick="change2()">Bangkok</button>
+                    </div>
+                </div>
+
+                <div id="ques3" class="ques">
+                    <div id="question">
+                        <p>Which planet is known as the "Red Planet"?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change3()">Venus</button>
+                        <button onclick="submit(),change3()">Mars</button>
+                        <button onclick="change3()">Jupiter</button>
+                        <button onclick="change3()">Saturn</button>
+                    </div>
+                </div>
+
+                <div id="ques4" class="ques">
+                    <div id="question">
+                        <p>What is the chemical symbol for gold?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change4()">Gd</button>
+                        <button onclick="submit(),change4()">Au</button>
+                        <button onclick="change4()">Ag</button>
+                        <button onclick="change4()">Fe</button>
+                    </div>
+                </div>
+
+                <div id="ques5" class="ques">
+                    <div id="question">
+                        <p>In which year did the Titanic sink?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change5()">1905</button>
+                        <button onclick="submit(),change5()">1912</button>
+                        <button onclick="change5()">1920</button>
+                        <button onclick="change5()">1931</button>
+                    </div>
+                </div>
+
+                <div id="ques6" class="ques">
+                    <div id="question">
+                        <p>Who developed the theory of relativity?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change6()">Isaac Newton</button>
+                        <button onclick="submit(),change6()">Albert Einstein</button>
+                        <button onclick="change6()">Galileo Galilei</button>
+                        <button onclick="change6()">Marie Curie</button>
+                    </div>
+                </div>
+
+                <div id="ques7" class="ques">
+                    <div id="question">
+                        <p>What is the largest mammal in the world?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change7()">Elephant</button>
+                        <button onclick="submit(),change7()">Blue Whale</button>
+                        <button onclick="change7()">Giraffe</button>
+                        <button onclick="change7()">Gorilla</button>
+                    </div>
+                </div>
+
+                <div id="ques8" class="ques">
+                    <div id="question">
+                        <p>Which country is known as the "Land of the Rising Sun"?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change8()">China</button>
+                        <button onclick="submit(),change8()">Japan</button>
+                        <button onclick="change8()">South Korea</button>
+                        <button onclick="change8()">Vietnam</button>
+                    </div>
+                </div>
+
+                <div id="ques9" class="ques">
+                    <div id="question">
+                        <p>What is the square root of 64?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change9()">6</button>
+                        <button onclick="submit(),change9()">8</button>
+                        <button onclick="change9()">5</button>
+                        <button onclick="change9()">2   </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="finalresult">
+            <img src="https://art.ngfiles.com/images/432000/432590_superscript-agario_cat-dance.gif?f1466015152" alt="">
+            <h1>Your score is:</h1>
+            <div id="answer">
+                10
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
